@@ -1,11 +1,13 @@
 A , B = map(int,input().split())
 
-isContain = False
-for i in (A, B+1):
-    if 100 % i == 0:
-        isContain = True
+answer = False
 
-if isContain:
+for i in range (A, B + 1):
+    if 100 % i == 0:
+        answer = True
+        break
+
+if answer:
     print("Yes")
 else:
     print("No")
