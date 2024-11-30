@@ -15,9 +15,9 @@ for i in range(N):
 
 total[0] = afterTime[0]
 
-for i in range(1 , N):
+for i in range(1 , T):
 
     total[i] = total[i - 1] + afterTime[i]
 
-for i in range(N):
+for i in range(T):
     print(total[i])
